@@ -22,16 +22,17 @@ comparably with the supervised training. Additionally, our proposed TS-TCC shows
 
 ## Requirmenets:
 - Python3.10.8
-- Pytorch==1.7
-- Numpy
-- scikit-learn==0.23.2
-- Pandas
+- Pytorch==2.5.0+cu11.8
+- Numpy==1.26.4
+- scikit-learn>=1.5.2
+- Pandas==1.5.3
 - openpyxl (for classification reports)
 - mne=='0.20.7' (For Sleep-EDF preprocessing)
 - mat4py (for Fault diagnosis preprocessing)
 ## Datasets
 ### Download datasets
 We used four public datasets in this study:
+- [LithoFacies] We save the dataset in data folder.
 - [Sleep-EDF](https://gist.github.com/emadeldeen24/a22691e36759934e53984289a94cb09b)
 - [HAR](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)  
 - [Epilepsy](https://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition) (this dataset is recently removed for some reason, so I uploaded the data file to the repo)
