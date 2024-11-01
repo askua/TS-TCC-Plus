@@ -21,7 +21,7 @@ comparably with the supervised training. Additionally, our proposed TS-TCC shows
 
 
 ## Requirmenets:
-- Python3.7
+- Python3.10.8
 - Pytorch==1.7
 - Numpy
 - scikit-learn==0.23.2
@@ -68,7 +68,7 @@ The configuration files in the `config_files` folder should have the same name a
 For example, for HAR dataset, the data folder name is `HAR` and the configuration file is `HAR_Configs.py`.
 From these files, you can update the training parameters.
 
-## Training TS-TCC 
+## Training TS-TCC-Plus 
 You can select one of several training modes:
  - Random Initialization (random_init)
  - Supervised training (supervised)
@@ -98,8 +98,8 @@ To train the model for the `fine_tune` and `train_linear` modes, you have to run
 - The experiments are saved in "experiments_logs" directory by default (you can change that from args too).
 - Each experiment will have a log file and a final classification report in case of modes other that "self-supervised".
 
-## Citation
-If you found this work useful for you, please consider citing it.
+## Reference
+
 ```
 @inproceedings{ijcai2021-324,
   title     = {Time-Series Representation Learning via Temporal and Contextual Contrasting},
