@@ -7,7 +7,9 @@ A modified version based on Time-Series Representation Learning via Temporal and
 #### This work is accepted for publication in the International Joint Conferences on Artificial Intelligence (IJCAI-21) (Acceptance Rate: 13.9%).
 
 ## Abstract
-<img src="misc/TS_TCC.png" width="500">
+
+![workflow_chart](figure/TS_TCC-zh_cn.png "arch")
+**Figure 1 arch**  
 Learning decent representations from unlabeled time-series data with temporal dynamics is a very challenging task. 
 In this paper, we propose an unsupervised <b>T</b>ime-<b>S</b>eries representation learning framework via <b>T</b>emporal and <b>C</b>ontextual <b>C</b>ontrasting 
 (<b>TS-TCC</b>), to learn time-series representation from unlabeled data. 
@@ -33,10 +35,8 @@ comparably with the supervised training. Additionally, our proposed TS-TCC shows
 ### Download datasets
 We used four public datasets in this study:
 - [LithoFacies] We save the dataset in data folder.
-- [Sleep-EDF](https://gist.github.com/emadeldeen24/a22691e36759934e53984289a94cb09b)
 - [HAR](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)  
-- [Epilepsy](https://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition) (this dataset is recently removed for some reason, so I uploaded the data file to the repo)
-- [Fault Diagnosis](https://mb.uni-paderborn.de/en/kat/main-research/datacenter/bearing-datacenter/data-sets-and-download)
+
 
 ### Preparing datasets
 The data should be in a separate folder called "data" inside the project folder.
@@ -45,7 +45,7 @@ The structure of data files should in dictionary form as follows:
 `train.pt = {"samples": data, "labels: labels}`, and similarly `val.pt`, and `test.pt`
 
 The details of preprocessing is as follows:
-#### 1- Sleep-EDF dataset:
+#### 1- Lithofacies dataset:
 Create a folder named `data_files` in the path `data_preprocessing/sleep-edf/`.
 Download the dataset files and place them in this folder. 
 
@@ -60,8 +60,6 @@ them in the `data/sleepEDF` folder.
 When you dowload the dataset and extract the zip file, you will find the data in a folder named
 `UCI HAR Dataset` ... place it in `data_preprocessing/uci_har/` folder and run `preprocess_har.py` file.
 
-#### 3- Epilepsy and Fault diagnosis datasets:
-download the data file in `data_files` folder and run the preprocessing scripts.
 
 
 ### Configurations
